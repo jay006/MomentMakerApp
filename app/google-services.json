@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "724383105671",
+    "firebase_url": "https://momentmakerapp.firebaseio.com",
+    "project_id": "momentmakerapp",
+    "storage_bucket": "momentmakerapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724383105671:android:e5b0457ffe284cc7",
+        "android_client_info": {
+          "package_name": "com.example.admin.moment_maker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724383105671-g950cr0c1svgtabbc3ku2vsv8in16cse.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.moment_maker",
+            "certificate_hash": "32d85d1c9b92a4b2367927de9c6700f38233be96"
+          }
+        },
+        {
+          "client_id": "724383105671-s1m7eq8o0sgvu9dirotr4iscusc1onvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv6vpd6mWlTygxbNPvlWZGIMgnN3J_Gxc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724383105671-s1m7eq8o0sgvu9dirotr4iscusc1onvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

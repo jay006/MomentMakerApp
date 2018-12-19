@@ -32,12 +32,14 @@ public class AccountActivity extends AppCompatActivity {
     String displayName;
     Uri displayPic;
     ImageButton btn;
+    Button viewBtn;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
+        viewBtn=(Button)findViewById(R.id.viewBtn);
         mAuth=FirebaseAuth.getInstance();
         mAuthListener=new FirebaseAuth.AuthStateListener() {
             @Override
@@ -60,7 +62,7 @@ public class AccountActivity extends AppCompatActivity {
         displayName=getIntent().getStringExtra("uname").toString();
 
         displayPic= Uri.parse(getIntent().getStringExtra("profilepic"));
-        username.setText(displayName);
+        username.setText("Welcome,"+displayName);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +72,7 @@ public class AccountActivity extends AppCompatActivity {
             }
         });
         Glide.with(this).load(displayPic).into(profilePic);
+
 
     }
 
@@ -95,5 +98,11 @@ public class AccountActivity extends AppCompatActivity {
             mAuth.signOut();
         }
         return true;
+    }
+
+
+    public void viewhug(View view) {
+        Intent viewhug=new Intent(AccountActivity.this,HugActivity.class);
+        startActivity(viewhug);
     }
 }

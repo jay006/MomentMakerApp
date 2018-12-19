@@ -54,26 +54,27 @@
             android:layout_height="44dp"
             android:layout_alignStart="@+id/l4"
             android:gravity="center"
-            android:text="Welcome, " />
+            android:text="Welcome, "
+            tools:ignore="ObsoleteLayoutParam,RtlCompat" />
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/texthug"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="161dp"
+        android:layout_height="38dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="14dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginTop="297dp"
-        android:layout_marginEnd="161dp"
-        android:layout_marginRight="161dp"
-        android:layout_marginBottom="231dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="257dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
+        android:layout_marginBottom="272dp"
         android:text="My Group Hugs"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
@@ -81,20 +82,38 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="65dp"
-        android:layout_height="53dp"
-        android:layout_alignTop="@+id/texthug"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="248dp"
-        android:layout_marginLeft="248dp"
-        android:layout_marginTop="-4dp"
+        android:layout_marginStart="239dp"
+        android:layout_marginLeft="239dp"
         android:layout_marginEnd="71dp"
         android:layout_marginRight="71dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="263dp"
         app:srcCompat="@drawable/uploadpic" />
+
+    <Button
+        android:id="@+id/viewBtn"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-164dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="39dp"
+        android:layout_toEndOf="@+id/texthug"
+        android:background="@color/colorAccent"
+        android:onClick="viewhug"
+        android:text="View hugs"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
 
 </RelativeLayout>

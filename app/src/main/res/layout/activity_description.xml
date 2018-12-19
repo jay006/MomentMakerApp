@@ -22,7 +22,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp">
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="RtlCompat">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,7 +48,7 @@
                     android:textSize="23sp" />
 
                 <EditText
-                    android:id="@+id/title"
+                    android:id="@+id/hugtitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Example: Happy 30th Birthday Julie "

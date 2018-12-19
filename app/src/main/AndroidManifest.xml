@@ -3,6 +3,8 @@
     package="com.example.admin.moment_maker">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +22,8 @@
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".AccountActivity" />
-        <activity android:name=".DescriptionActivity"></activity>
+        <activity android:name=".DescriptionActivity" />
+        <activity android:name=".HugActivity"></activity>
     </application>
 
 </manifest>

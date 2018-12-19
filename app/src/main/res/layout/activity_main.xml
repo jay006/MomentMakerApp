@@ -106,7 +106,8 @@
                 android:background="@drawable/buttonstyle"
                 android:text="Get Started"
                 android:textSize="20sp"
-                android:textStyle="normal" />
+                android:textStyle="normal"
+                tools:ignore="RtlCompat" />
         </RelativeLayout>
     </LinearLayout>
 

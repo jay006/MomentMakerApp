@@ -5,15 +5,17 @@ public class UserDetails {
     private String description;
     private String date;
     private String hugId;
+    private String imageUrl;
     UserDetails(){
 
     }
 
-    UserDetails(String hugId,String title,String description,String date){
+    UserDetails(String hugId,String title,String description,String date,String imageUrl){
         this.hugId=hugId;
         this.title=title;
         this.description=description;
         this.date=date;
+        this.imageUrl=imageUrl;
 
     }
 
@@ -49,4 +51,11 @@ public class UserDetails {
         this.date = date;
     }
 
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 }
